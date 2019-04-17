@@ -1,0 +1,36 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class Timetable {
+
+	public Timetable() {
+
+	}
+	public static void main(String[] args) {
+		
+		//Create Timetable Map
+		Map<String, Integer> timeTable = timeTable = new HashMap<>();
+		timeTable.put("8:00", 0); 
+		timeTable.put("8:30", 1);
+		timeTable.put("9:00", 2);
+		timeTable.put("9:30", 3);
+		timeTable.put("10:00", 4);
+		timeTable.put("10:30", 5);
+		timeTable.put("11:00", 6);
+		timeTable.put("11:30", 7);
+		timeTable.put("12:00", 8);
+		timeTable.put("12:30", 9);
+		timeTable.put("1:00", 10);
+		timeTable.put("1:30", 11);
+		timeTable.put("2:00", 12);
+		timeTable.put("2:30", 13);
+		timeTable.put("3:00", 14);
+		timeTable.put("3:30", 15);
+		timeTable.put("4:00", 16);
+					
+		//How to use		
+		System.out.println(timeTable.get("8:30"));
+		System.out.println(timeTable.get("2:30"));
+	}
+
+}
