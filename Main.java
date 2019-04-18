@@ -121,6 +121,10 @@ public class Main {
 
 
             }
+            else
+            {
+                System.out.println("Invalid answer choice. Please enter A, B, C or STOP");
+            }
 
             answer = "";
             System.out.println("What would you like to do? A) Enter a patient B) Show Doctor Schedule C)Remove Patient");
