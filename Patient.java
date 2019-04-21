@@ -1,34 +1,45 @@
 public class Patient {
 
 
-    private String PatientName;
-    private String visitReason;
-    private int PatientDOB;
-    private int apptTime;
+    private String patientName;
+	private String visitReason;
+    private int patientDOB;
+    private String apptTime;
 
-    public Patient()
+    public Patient(String apptTime)
     {
-        this.PatientName = null;
-        this.visitReason = null;
-        this.PatientDOB = 0;
-        this.apptTime = 0;
-    }
-
-    public Patient(String PatientName, String visitReason, int PatientDOB, int apptTime){
-        this.PatientName = PatientName;
-        this.visitReason = visitReason;
-        this.PatientDOB = PatientDOB;
+        this.patientName = "Available";
+        this.visitReason = "---";
+        this.patientDOB = 0;
         this.apptTime = apptTime;
     }
 
-    public String toString()
-    {
-        return "Patient Name: " + PatientName + ", Reason for visit: " + visitReason + ", DOB: " + PatientDOB + ", Appointment Time: " + apptTime+ "\n" ;
+    public Patient(String patientName, String visitReason, int patientDOB, String apptTime){
+        this.patientName = patientName;
+        this.visitReason = visitReason;
+        this.patientDOB = patientDOB;
+        this.apptTime = apptTime;
     }
+    
+    public String getPatientName() 
+    {
+		return patientName;
+	}
 
+    public String getVisitReason() 
+    {
+		return visitReason;
+	}
 
+	public String getApptTime() 
+	{
+		return apptTime;
+	}
 
-
+	public String toString()
+    {
+        return "Patient Name: " + patientName + ", Reason for visit: " + visitReason + ", DOB: " + patientDOB + ", Appointment Time: " + apptTime+ "\n" ;
+    }
 }
 
 
