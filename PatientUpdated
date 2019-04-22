@@ -1,0 +1,32 @@
+public class Patient {
+
+
+    private String PatientName;
+    private String visitReason;
+    private String PatientDOB;
+    private String apptTime;
+
+    public Patient()
+    {
+        this.PatientName = null;
+        this.visitReason = null;
+        this.PatientDOB = null;
+        this.apptTime = null;
+    }
+
+    public Patient(String PatientName, String visitReason, String PatientDOB, String apptTime){
+        this.PatientName = PatientName;
+        this.visitReason = visitReason;
+        this.PatientDOB = PatientDOB;
+        this.apptTime = apptTime;
+    }
+
+    public String toString()
+    {
+        return "Patient Name: " + PatientName + ", Reason for visit: " + visitReason + ", DOB: " + PatientDOB + ", Appointment Time: " + apptTime+ "\n" ;
+    }
+
+
+
+
+}
