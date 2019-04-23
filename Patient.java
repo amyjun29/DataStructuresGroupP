@@ -1,6 +1,7 @@
 public class Patient {
 
 
+    //Patient object fields
     private String patientName;
     private String visitReason;
     private int patientDOB;
@@ -8,13 +9,16 @@ public class Patient {
 
     public Patient(String apptTime)
     {
+        //default constructor
         this.patientName = "Available";
         this.visitReason = "---";
         this.patientDOB = 0;
         this.apptTime = apptTime;
     }
 
-    public Patient(String patientName, String visitReason, int patientDOB, String apptTime){
+    public Patient(String patientName, String visitReason, int patientDOB, String apptTime)
+    {
+        //constructor with parameters
         this.patientName = patientName;
         this.visitReason = visitReason;
         this.patientDOB = patientDOB;
