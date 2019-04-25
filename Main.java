@@ -173,6 +173,7 @@ public class Main {
                 System.out.println("Enter Appointment Time To Cancel");
                 Scanner input7 = new Scanner(System.in);
                 String removeTime = input7.nextLine();
+                System.out.println();
 
                 //remove patient
                 current.removePatient(timeTable.get(removeTime));

@@ -50,8 +50,11 @@ public class Doctor {
 
     public void removePatient(int index)
     {
+        if(this.schedule.get(index).getPatientName().equals("Available"))
+            System.out.println("There's no patient booked at that time slot\n");
+
         schedule.remove(index);
-        schedule.add(new Patient(appointmentTimes[index]));
+        schedule.add(index, new Patient(appointmentTimes[index]));
     }
 
     public LinkedList<Patient> getSchedule() {
